@@ -1,0 +1,16 @@
+HTML5
+CSS3 - Transitions/Grid/Flex
+Sass - node sass : npm i node-sass
+NPM Package Manager
+JavaScript
+Git
+
+------
+Extensions/Plugins
+
+Live Server by Ritwick Dey-- dev server with auto load
+Bracket pair colorizer -- optional
+Prettier --
+    settings -
+    editor.formatOnSave : true
+
