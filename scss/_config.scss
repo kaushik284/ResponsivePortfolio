@@ -33,8 +33,22 @@ $background-opacity: 0.7;
     }
 }
 
-// Media query mixins
+// Function to return text color based on background color
+// i.e. primary color
+@function get-text-color($color)
+{
+    @if(lightness($color) > 40)
+    {
+        @return #444;
+    }
+    @else
+    {
+        @return #fff;
+    }
+}
 
+
+// Media query mixins
 @mixin mediaSmall {
     @media screen and (max-width: 500px){
         @content;

@@ -1,1 +1,3 @@
 node_modules
+.gitignore
+main_bkp.scss
