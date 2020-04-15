@@ -250,7 +250,7 @@ main {
     main#about {
       text-align: justify; }
     main#work {
-      text-align: justify; }
+      text-align: left; }
     main#contact {
       text-align: justify; }
   ul.menu-nav, div.menu-branding {
