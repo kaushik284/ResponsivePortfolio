@@ -232,6 +232,8 @@ main {
       text-align: justify; }
     main#work {
       text-align: justify; }
+    main#contact {
+      text-align: justify; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
