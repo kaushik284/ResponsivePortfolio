@@ -12,12 +12,12 @@ html
 }
 
 body{
-    @include background();
+    @include background;
     background: $primary-color;
     color: get-text-color($primary-color);
     height:100%;
     margin: 0;
-    font-family:'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
 
@@ -32,7 +32,7 @@ h1, h2, h3 {
     }
 
     &.sm-heading {
-        margin-bottom:2px;
+        margin-bottom:2rem;
         padding:0.2rem 1rem;
         background: rgba(lighten($primary-color,2),0.5);
     }
@@ -81,47 +81,51 @@ main {
             margin-top:20vh;
         }
     }
-
-    //grid template area
-    // - . for empty cell
-    //none - no grid areas defined
-    .about-info {
-        display: grid;
-        grid-gap: 20px;
-        grid-template-areas: 
-        'bioimage bio bio bio'
-        'job1 job1 job2 job2';
-        grid-template-columns: repeat(4, 1fr);
-
-        //grid areas 
-         .bio-image {
-             grid-area: bioimage;
-             margin: auto;
-             border-radius: 50%;
-             border: $secondary-color 3px solid;
-         }
-     
-         .bio {
-             grid-area: bio;
-             font-size: 1.5rem;
-         }
-     
-         .job-1 {
-             grid-area: job1;
-         }
-     
-         .job-2 {
-             grid-area: job2;
-         }
-     
-         .job {
-             background: lighten($primary-color, 5);
-             padding: 0.5rem;
-             border-bottom: $secondary-color 5px solid
-         }
-    }
-
 }//end of main
+
+
+//grid template area
+// - . for empty cell
+//none - no grid areas defined
+.about-info {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'bioimage bio bio bio'
+    'job1 job1 job2 job2';
+    grid-template-columns: repeat(4, 1fr);
+
+    //grid areas 
+     .bio-image {
+         grid-area: bioimage;
+         margin: auto;
+         border-radius: 50%;
+         border: $secondary-color 3px solid;
+     }
+ 
+     .bio {
+         grid-area: bio;
+         font-size: 1.5rem;
+     }
+ 
+     .job-1 {
+         grid-area: job1;
+     }
+ 
+     .job-2 {
+         grid-area: job2;
+     }
+
+     .job-3 {
+        grid-area: job3;
+        }
+
+     .job {
+         background: lighten($primary-color, 5);
+         padding: 0.5rem;
+         border-bottom: $secondary-color 5px solid
+     }
+}
 
 // work projects
 .projects {

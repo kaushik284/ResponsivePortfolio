@@ -31,19 +31,19 @@
          }
 
         // for about section
-        &#about {
-            //align-items: flex-end;
-            text-align: justify;
-        }
+        // &#about {
+        //     //align-items: flex-end;
+        //     text-align: justify;
+        // }
          // for work section
-         &#work {
-             //align-items: flex-end;
-             text-align: left;
-         }
+        //  &#work {
+        //      //align-items: flex-end;
+        //      text-align: center;
+        //  }
          //for contact me
-         &#contact {
-             text-align: justify;
-         }
+        //  &#contact {
+        //      text-align: justify;
+        //  }
     }
 
     // top and bottom for menu and branding
@@ -64,10 +64,10 @@
     }
     .menu-branding {
         height: 25vh;
-        transform: translate3d(1000%,0,0);
+        transform: translate3d(100%,0,0);
 
         .portrait {
-            background: url(../img/portrait_small.jpg);
+            background: url('../img/portrait_small.jpg');
             width:150px;
             height:150px;
         }
@@ -101,7 +101,7 @@
         .lg-heading {
             margin-top:1rem;
             font-size: 5rem;
-           // background: red;
+           
         }
 
         .projects{
