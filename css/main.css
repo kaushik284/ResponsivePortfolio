@@ -103,7 +103,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -125,7 +125,7 @@ h1, h2, h3 {
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 6rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2px;
+    margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
 
@@ -155,27 +155,30 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
-  main .about-info {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas: 'bioimage bio bio bio' 'job1 job1 job2 job2';
-    grid-template-columns: repeat(4, 1fr); }
-    main .about-info .bio-image {
-      grid-area: bioimage;
-      margin: auto;
-      border-radius: 50%;
-      border: #1aceee 3px solid; }
-    main .about-info .bio {
-      grid-area: bio;
-      font-size: 1.5rem; }
-    main .about-info .job-1 {
-      grid-area: job1; }
-    main .about-info .job-2 {
-      grid-area: job2; }
-    main .about-info .job {
-      background: #515151;
-      padding: 0.5rem;
-      border-bottom: #1aceee 5px solid; }
+
+.about-info {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 'bioimage bio bio bio' 'job1 job1 job2 job2';
+  grid-template-columns: repeat(4, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #1aceee 3px solid; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #1aceee 5px solid; }
 
 .projects {
   display: grid;
@@ -247,12 +250,6 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
-    main#about {
-      text-align: justify; }
-    main#work {
-      text-align: left; }
-    main#contact {
-      text-align: justify; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
@@ -265,9 +262,9 @@ main {
     font-size: 24px; }
   .menu-branding {
     height: 25vh;
-    transform: translate3d(1000%, 0, 0); }
+    transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(../img/portrait_small.jpg);
+      background: url("../img/portrait_small.jpg");
       width: 150px;
       height: 150px; }
   .about-info {
